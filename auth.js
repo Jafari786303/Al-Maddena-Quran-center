@@ -27,7 +27,7 @@ const slideIndex = document.querySelector("#slideIndex");
 
 const COURSE_TREE = {
   intro_holy_quran: { label: "قرآنِ مجید کا تعارف (قرآنیات)", subs: [
-    "Tajweed","History of Revelation (Wahi)","Compilation of the Quran","Makki and Madani Surahs","Importance of the Quran in Daily Life","Tawheed (Oneness of Allah)","Attributes of Allah","Prophethood (Risalat)","Finality of Prophet Muhammad","Angels in Islam","Divine Books","Akhirah (Life Hereafter)","Day of Judgment","Worship in Islam","Salah (Prayer) in the Quran","Fasting in the Quran","Zakat and Charity","Hajj and Pilgrimage","Moral Teachings of the Quran","Rights of Parents","Rights of Neighbors and Society","Women’s Rights in Islam","Human Rights in the Quran","Economic Teachings of Islam","Justice and Equality","Peace and Tolerance","Stories of Prophets in the Quran","Scientific Facts in the Quran","Quranic Supplications (Duas)","Practical Quranic Guidance for Modern Life"
+    "تجوید","History of Revelation (Wahi)","Compilation of the Quran","Makki and Madani Surahs","Importance of the Quran in Daily Life","Tawheed (Oneness of Allah)","Attributes of Allah","Prophethood (Risalat)","Finality of Prophet Muhammad","Angels in Islam","Divine Books","Akhirah (Life Hereafter)","Day of Judgment","Worship in Islam","Salah (Prayer) in the Quran","Fasting in the Quran","Zakat and Charity","Hajj and Pilgrimage","Moral Teachings of the Quran","Rights of Parents","Rights of Neighbors and Society","Women’s Rights in Islam","Human Rights in the Quran","Economic Teachings of Islam","Justice and Equality","Peace and Tolerance","Stories of Prophets in the Quran","Scientific Facts in the Quran","Quranic Supplications (Duas)","Practical Quranic Guidance for Modern Life"
   ] },
   seerath: { label: "سیرت", subs: [
     "Introduction to Seerah","Arabia Before Islam","Family Background of Prophet Muhammad ﷺ","Birth of the Prophet ﷺ","Childhood and Upbringing","Youth of the Prophet ﷺ","Trade and Honesty","Marriage with Hazrat Khadijah (RA)","Cave Hira and Worship","First Revelation","Early Preaching of Islam","Persecution in Makkah","Migration to Abyssinia","Isra and Miraj","Pledges of Aqabah","Migration to Madinah","Construction of Masjid-e-Nabawi","Brotherhood in Madinah","Battle of Badr","Battle of Uhud","Battle of the Trench","Treaty of Hudaybiyyah","Conquest of Makkah","Farewell Sermon","Character of the Prophet ﷺ","Justice of the Prophet ﷺ","Kindness Towards Women","Love for Children","Passing of the Prophet ﷺ"
@@ -70,15 +70,16 @@ const courses = [
   {
     title: "قرآنِ مجید کا تعارف",
     topics: [
-      "History of Revelation (Wahi)", "Compilation of the Quran", "Makki and Madani Surahs",
-      "Importance of the Quran in Daily Life", "Tawheed (Oneness of Allah)", "Attributes of Allah",
-      "Prophethood (Risalat)", "Finality of Prophet Muhammad", "Angels in Islam", "Divine Books",
-      "Akhirah (Life Hereafter)", "Day of Judgment", "Worship in Islam", "Salah (Prayer) in the Quran",
-      "Fasting in the Quran", "Zakat and Charity", "Hajj and Pilgrimage", "Moral Teachings of the Quran",
-      "Rights of Parents", "Rights of Neighbors and Society", "Women’s Rights in Islam",
-      "Human Rights in the Quran", "Economic Teachings of Islam", "Justice and Equality",
-      "Peace and Tolerance", "Stories of Prophets in the Quran", "Scientific Facts in the Quran",
-      "Quranic Supplications (Duas)", "Practical Quranic Guidance for Modern Life"
+      "وحی کی تاریخ", "قرآنِ پاک کی تدوین", "مکی اور مدنی سورتیں",
+"روزمرہ زندگی میں قرآن کی اہمیت", "توحید (اللہ کی وحدانیت)", "اللہ تعالیٰ کی صفات",
+"رسالت", "ختمِ نبوتِ :contentReference[oaicite:0]{index=0}", "اسلام میں فرشتے",
+"آسمانی کتابیں", "آخرت", "قیامت کا دن",
+"اسلام میں عبادات", "قرآن میں نماز", "قرآن میں روزہ",
+"زکوٰۃ اور صدقہ", "حج اور زیارت", "قرآن کی اخلاقی تعلیمات",
+"والدین کے حقوق", "پڑوسیوں اور معاشرے کے حقوق", "اسلام میں خواتین کے حقوق",
+"قرآن میں انسانی حقوق", "اسلام کی معاشی تعلیمات", "عدل و مساوات",
+"امن اور برداشت", "قرآن میں انبیاء کے واقعات", "قرآن میں سائنسی حقائق",
+"قرآنی دعائیں", "جدید زندگی کے لیے قرآنی رہنمائی"
     ]
   },
   {
