@@ -85,39 +85,46 @@ const courses = [
   {
     title: "سیرت",
     topics: [
-      "Introduction to Seerah", "Arabia Before Islam", "Family Background of Prophet Muhammad ﷺ",
-      "Birth of the Prophet ﷺ", "Childhood and Upbringing", "Youth of the Prophet ﷺ",
-      "Trade and Honesty", "Marriage with Hazrat Khadijah (RA)", "Cave Hira and Worship",
-      "First Revelation", "Early Preaching of Islam", "Persecution in Makkah", "Migration to Abyssinia",
-      "Isra and Miraj", "Pledges of Aqabah", "Migration to Madinah", "Construction of Masjid-e-Nabawi",
-      "Brotherhood in Madinah", "Battle of Badr", "Battle of Uhud", "Battle of the Trench",
-      "Treaty of Hudaybiyyah", "Conquest of Makkah", "Farewell Sermon", "Character of the Prophet ﷺ",
-      "Justice of the Prophet ﷺ", "Kindness Towards Women", "Love for Children", "Passing of the Prophet ﷺ"
+      "تعارفِ سیرت", "عرب کا پرانا معاشرہ", "خاندانِ :contentReference[oaicite:0]{index=0}",
+"پیدائشِ رسول ﷺ", "بچپن اور پرورش", "نوجوانی کا دور",
+"تجارت اور دیانت داری", "نکاحِ :contentReference[oaicite:1]{index=1}", "غارِ حرا اور عبادت",
+"پہلی وحی", "ابتدائی دعوتِ اسلام", "مکہ کے مظالم",
+"ہجرتِ حبشہ", "معراج النبی ﷺ", "بیعتِ عقبہ",
+"ہجرتِ مدینہ", "مسجدِ نبوی کی تعمیر", "مواخاتِ مدینہ",
+"غزوۂ بدر", "غزوۂ اُحد", "غزوۂ خندق",
+"صلح حدیبیہ", "فتحِ مکہ", "خطبۂ حجۃ الوداع",
+"اخلاقِ نبوی ﷺ", "عدل و انصافِ نبوی ﷺ", "خواتین سے حسنِ سلوک",
+"بچوں سے محبت", "وفاتِ رسول ﷺ", "سیرت النبی ﷺ سے عملی اسباق"
     ]
   },
   {
     title: "احکام",
     topics: [
-      "Introduction to Islamic Laws", "Rules of Purification", "Rules of Wudu", "Rules of Ghusl",
-      "Method of Tayammum", "Rules of Salah", "Congregational Prayer", "Rules of Friday Prayer",
-      "Rules of Fasting", "Rules of Zakat", "Charity and Sadaqah", "Rules of Hajj", "Rules of Umrah",
-      "Halal and Haram", "Islamic Manners of Eating and Drinking", "Rules of Islamic Dress",
-      "Rules of Marriage", "Rules of Divorce", "Laws of Inheritance", "Islamic Principles of Trade",
-      "Prohibition of Interest (Riba)", "Loans and Trusts", "Rights of Parents", "Rights of Neighbors",
-      "Rights of Husband and Wife", "Rights of Children", "Justice in Islam", "Islamic Social System",
-      "Introduction to Hudood and Punishments", "Islamic Rulings for Daily Life"
+      "احکامِ اسلامی کا تعارف", "طہارت کے احکام", "وضو کے مسائل",
+"غسل کے احکام", "تیمم کا طریقہ", "نماز کے احکام",
+"جماعت کی نماز", "جمعہ کے احکام", "روزے کے مسائل",
+"زکوٰۃ کے احکام", "صدقہ و خیرات", "حج کے احکام",
+"عمرہ کے مسائل", "حلال اور حرام", "کھانے پینے کے اسلامی آداب",
+"لباس کے احکام", "نکاح کے احکام", "طلاق کے مسائل",
+"وراثت کے احکام", "تجارت کے اسلامی اصول", "سود کی ممانعت",
+"قرض اور امانت", "والدین کے حقوق", "پڑوسیوں کے حقوق",
+"شوہر اور بیوی کے حقوق", "بچوں کے حقوق", "عدل و انصاف کے احکام",
+"اسلامی معاشرت", "حدود و تعزیرات کا تعارف", "روزمرہ زندگی کے اسلامی احکام"
     ]
   },
   {
     title: "اخلاق",
     topics: [
-      "Introduction to Ethics", "Importance of Good Character", "Truthfulness", "Honesty and Trustworthiness",
-      "Patience and Tolerance", "Gratitude", "Humility", "Respect for Parents", "Respect for Teachers",
-      "Respect for Elders", "Kindness to Youngers", "Good Behavior", "Brotherhood and Unity", "Forgiveness",
-      "Keeping Promises", "Justice and Fairness", "Cleanliness and Purity", "Punctuality",
-      "Hard Work and Integrity", "Avoiding Jealousy", "Controlling Anger", "Avoiding Backbiting and Slander",
-      "Generosity and Charity", "Hospitality", "Helping Others", "Islamic Manners of Speech",
-      "Choosing Good Friends", "Character of Prophet Muhammad ﷺ", "Social Ethics", "Islamic Ethics in Daily Life"
+      "اخلاقیات کا تعارف", "اچھے اخلاق کی اہمیت", "سچائی",
+"امانت داری", "صبر و برداشت", "شکر گزاری",
+"عاجزی اور انکساری", "احترامِ والدین", "اساتذہ کا احترام",
+"بڑوں کا ادب", "چھوٹوں سے شفقت", "حسنِ سلوک",
+"اخوت اور بھائی چارہ", "معافی اور درگزر", "وعدے کی پابندی",
+"انصاف پسندی", "صفائی اور پاکیزگی", "وقت کی پابندی",
+"محنت اور دیانت", "حسد سے بچاؤ", "غصے پر قابو",
+"غیبت اور بہتان سے بچاؤ", "سخاوت اور خیرات", "مہمان نوازی",
+"دوسروں کی مدد کرنا", "اسلامی آدابِ گفتگو", "اچھے دوستوں کا انتخاب",
+"اخلاقِ :contentReference[oaicite:0]{index=0}", "معاشرتی اخلاقیات", "روزمرہ زندگی میں اسلامی اخلاق"
     ]
   }
 ];
