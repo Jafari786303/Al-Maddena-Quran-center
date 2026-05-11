@@ -137,7 +137,7 @@ courseCards.innerHTML = courses.map((c) => {
 }).join("");
 
 const i18n = {
-  ur: { title: "اسلامی تعلیم و تربیت", heading: " اسلامی تعلیم و تربیت ", auth: "رجسٹریشن اور لاگ اِن", reg: "رجسٹریشن فارم", login: "لاگ اِن" }
+  ur: { title: "اسلامی تعلیم و تربیت", heading: " اسلامی تعلیم حاصل کرنے کا بہترین موقع  ", auth: "رجسٹریشن اور لاگ اِن", reg: "رجسٹریشن فارم", login: "لاگ اِن" }
 };
 function setLanguage(lang) {
   const t = i18n.ur;
