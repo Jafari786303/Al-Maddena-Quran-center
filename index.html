@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tajweed Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="lang-switch">
+      <button id="langEn">EN</button>
+      <button id="langUr">اردو</button>
+    </div>
+    <header class="hero" id="home">
+      <div class="overlay"></div>
+      <nav class="nav wrap">
+        <div class="brand">
+          <div class="logo">TC</div>
+          <div>
+            <h1>Tajweed Center</h1>
+            <p>Qur'an learning platform</p>
+          </div>
+        </div>
+      </nav>
+      <div class="hero-content wrap">
+        <div>
+          <h2>Structured Islamic Learning for Mobile-First Students</h2>
+          <p>Register once, login securely, apply for courses, and continue from your personal dashboard.</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="wrap" id="courses">
+        <h3>Courses</h3>
+        <div class="grid-4" id="courseCards"></div>
+      </section>
+
+      <section class="wrap panel" id="auth">
+        <h3>Registration & Login</h3>
+        <p class="note">After successful auth, you will be redirected to a separate dashboard page.</p>
+
+        <div class="grid-2">
+          <form id="registerForm" class="card">
+            <h4>Registration Form</h4>
+            <label>Full Name <input required name="name" /></label>
+            <label>Email <input required type="email" name="email" /></label>
+            <label>Age <input required type="number" min="4" max="100" name="age" /></label>
+            <label>Phone Number <input required name="phone" /></label>
+            <label>Address <input required name="address" /></label>
+            <label>Display Photo URL <input required type="url" name="photoUrl" placeholder="https://..." /></label>
+            <label>How did you hear about us? <input required name="heardFrom" /></label>
+            <label>Apply As
+              <select name="role" required>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+              </select>
+            </label>
+            <label>Password <input required type="password" minlength="6" name="password" /></label>
+            <button type="submit">Register (Email + Password)</button>
+            <button type="button" id="registerGoogle" class="ghost">Register / Login with Google</button>
+          </form>
+
+          <form id="loginForm" class="card">
+            <h4>Login</h4>
+            <label>Email <input required type="email" name="email" /></label>
+            <label>Password <input required type="password" name="password" /></label>
+            <button type="submit">Login</button>
+            <button type="button" id="loginGoogle" class="ghost">Login with Google</button>
+            <div class="status" id="authStatus"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer><p>Tajweed Center</p></footer>
+    <script type="module" src="./auth.js"></script>
+  </body>
+</html>
