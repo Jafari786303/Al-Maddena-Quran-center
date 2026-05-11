@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ur" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تجوید سینٹر ڈیش بورڈ</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="lang-switch">
+      <button id="langUr">اردو</button>
+    </div>
+    <button id="adminQuickOpen" class="hidden" style="position:fixed;right:12px;bottom:12px;z-index:120;padding:10px 12px;border-radius:999px;">Admin</button>
+    <button id="sidebarToggle" class="sidebar-toggle">☰</button>
+    <aside id="leftSidebar" class="left-sidebar">
+      <div id="profileCard" class="profile"></div>
+      <div class="card">
+        <h4>انتظام</h4>
+        <button id="openEnrollmentFormBtn" class="hidden">نئے کورس کے لیے اپلائی کریں</button>
+        <button id="showMyRequestsBtn" class="hidden">میری درخواستیں دکھائیں</button>
+      </div>
+      <div class="card">
+        <h4>چیٹس</h4>
+        <div id="chatThreads" class="thread-list"></div>
+      </div>
+    </aside>
+    <main>
+      <section class="wrap panel" id="userArea">
+        <h3>ڈیش بورڈ</h3>
+        <div class="grid-2" id="quickLinks">
+          <div class="card quick-card">
+            <h4>فوری اعمال</h4>
+            <div class="quick-links">
+              <button id="quickApplyBtn" class="hidden">نئے کورس کے لیے اپلائی کریں</button>
+              <button id="quickRequestsBtn" class="hidden">میری درخواستیں دکھائیں</button>
+              <button id="quickChatsBtn">چیٹس کھولیں</button>
+            </div>
+          </div>
+          <div class="card quick-card">
+            <h4>جائزہ</h4>
+            <div id="roleOverview" class="overview-text">ڈیش بورڈ لوڈ ہو رہا ہے...</div>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <form id="courseApplyForm" class="card hidden">
+            <h4>کورس اندراج</h4>
+            <p class="note">مرحلہ 1: مرکزی مضمون کا زمرہ منتخب کریں۔</p>
+            <label>مرکزی مضمون کا زمرہ
+              <select name="mainCourse" required>
+                <option value="intro_holy_quran">قرآن مجید کا تعارف (قرآنیات)</option>
+                <option value="ahkam">احکام</option>
+                <option value="akhlaq">اخلاق</option>
+                <option value="seerath">سیرت</option>
+              </select>
+            </label>
+            <p class="note">مرحلہ 2: اسی فارم میں ذیلی زمرہ منتخب کریں۔</p>
+            <label>ذیلی زمرہ
+              <select name="subCategory" required></select>
+            </label>
+            <div class="card" style="padding:10px;">
+              <label>نیا عنوان / ٹاپک شامل کریں
+                <input name="customHeading" placeholder="عنوان لکھیں اور شامل کریں" />
+              </label>
+              <button type="button" id="addCustomHeadingBtn">عنوان شامل کریں</button>
+            </div>
+            <label id="tajweedStageLabel">تجوید لیول (صرف تجوید ذیلی مضمون کے لیے)
+              <select name="tajweedStage">
+                <option value="">تجوید لیول منتخب کریں</option>
+                <option value="beginner_stage">ابتدائی مرحلہ</option>
+                <option value="intermediate_stage">درمیانی مرحلہ</option>
+                <option value="expert_stage">ماہر مرحلہ</option>
+                <option value="full_teacher_stage">مکمل ٹیچر مرحلہ</option>
+              </select>
+            </label>
+            <p class="note">مرحلہ 3: کورس کا دورانیہ منتخب کریں۔</p>
+            <div class="grid-2">
+              <label>ماہ
+                <select name="durationMonths" required></select>
+              </label>
+              <label>دن
+                <select name="durationDays" required></select>
+              </label>
+            </div>
+            <p class="note">مرحلہ 4: اپنی دستیابی اور سابقہ معلومات دیں۔</p>
+            <label>آن لائن کلاس کے لیے آپ کس وقت دستیاب ہیں؟
+              <textarea required name="freeTimes" rows="2"></textarea>
+            </label>
+            <label>کیا آپ نے پہلے ایسا کوئی کورس کیا ہے؟
+              <textarea required name="previousExperience" rows="2"></textarea>
+            </label>
+            <button type="submit">اندراج جمع کریں</button>
+          </form>
+          <div class="card" id="courseContentCard">
+            <h4>کورس مواد (پی ڈی ایف)</h4>
+            <div id="courseContentPreview" class="overview-text">مواد دیکھنے کے لیے زمرہ اور ذیلی زمرہ منتخب کریں۔</div>
+          </div>
+
+          <div class="card hidden" id="teacherStudentsCard">
+            <h4>منسلک طلبہ</h4>
+            <div id="teacherStudents"></div>
+          </div>
+        </div>
+
+        <div class="chat-wrap hidden" id="chatWrap">
+          <div class="chat-head">
+            <h4>چیٹ</h4>
+            <p id="chatMeta">چیٹ منتخب کریں</p>
+          </div>
+          <div id="chatMessages" class="chat-messages"></div>
+          <form id="chatForm" class="chat-form">
+            <input name="message" placeholder="پیغام لکھیں..." required />
+            <button>بھیجیں</button>
+          </form>
+        </div>
+
+        <div class="card hidden" id="studentEnrollmentsCard">
+          <h4>میری جمع شدہ درخواستیں</h4>
+          <div id="studentEnrollments"></div>
+        </div>
+      </section>
+    </main>
+
+    <section class="admin hidden" id="adminPanel">
+      <div class="admin-content wrap">
+        <h3>ایڈمن پینل</h3>
+        <div class="grid-2">
+          <div class="card"><h4>تمام صارفین</h4><div id="adminUsers"></div></div>
+          <div class="card"><h4>درخواستیں اور استاد اسائنمنٹ</h4><div id="adminEnrollments"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="./dashboard.js"></script>
+  </body>
+</html>
