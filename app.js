@@ -46,7 +46,7 @@ const courses = [
   { id: "teacher_course", title: "Teacher Course", desc: "Pedagogy and teaching preparation for Tajweed." }
 ];
 
-const adminEmails = ["mhmd1212@gmail.com"];
+const adminEmails = ["mhmdhaffi42@gmail.com"];
 let currentUser = null;
 let currentProfile = null;
 let currentChatId = null;
