@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tajweed Center Dashboard</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <button id="adminQuickOpen" class="hidden" style="position:fixed;right:12px;bottom:12px;z-index:120;padding:10px 12px;border-radius:999px;">Admin</button>
+    <main>
+      <section class="wrap panel" id="userArea">
+        <h3>Dashboard</h3>
+        <div id="profileCard" class="profile"></div>
+
+        <div class="grid-2">
+          <form id="courseApplyForm" class="card hidden">
+            <h4>Course Enrollment</h4>
+            <p class="note">Step 1: Select your course category.</p>
+            <label>Main Course Category
+              <select name="mainCourse" required>
+                <option value="quranyath">Quranyath</option>
+                <option value="ahkam">Ahkam</option>
+                <option value="akhlaq">Akhlaq</option>
+                <option value="seerath">Seerath</option>
+              </select>
+            </label>
+            <p class="note">Step 2: If you selected Quranyath, choose your Tajweed level.</p>
+            <label id="tajweedStageLabel">Tajweed Level
+              <select name="tajweedStage">
+                <option value="">Select Tajweed Level</option>
+                <option value="beginner_stage">Beginner Stage</option>
+                <option value="intermediate_stage">Intermediate Stage</option>
+                <option value="expert_stage">Expert Stage</option>
+                <option value="full_teacher_stage">Full Teacher Stage</option>
+              </select>
+            </label>
+            <p class="note">Step 3: Tell us your available time and background.</p>
+            <label>What times are you free for online classes?
+              <textarea required name="freeTimes" rows="2"></textarea>
+            </label>
+            <label>Have you joined a similar course before?
+              <textarea required name="previousExperience" rows="2"></textarea>
+            </label>
+            <button type="submit">Submit Enrollment</button>
+          </form>
+
+          <div class="card hidden" id="teacherStudentsCard">
+            <h4>Assigned Students</h4>
+            <div id="teacherStudents"></div>
+          </div>
+        </div>
+
+        <div class="chat-wrap hidden" id="chatWrap">
+          <div class="chat-head">
+            <h4>Chat</h4>
+            <p id="chatMeta">Select a chat target</p>
+          </div>
+          <div id="chatMessages" class="chat-messages"></div>
+          <form id="chatForm" class="chat-form">
+            <input name="message" placeholder="Type message..." required />
+            <button>Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <section class="admin hidden" id="adminPanel">
+      <div class="admin-content wrap">
+        <h3>Admin Panel</h3>
+        <div class="grid-2">
+          <div class="card"><h4>All Users</h4><div id="adminUsers"></div></div>
+          <div class="card"><h4>Enrollments & Teacher Assignment</h4><div id="adminEnrollments"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="./dashboard.js"></script>
+  </body>
+</html>
