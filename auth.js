@@ -71,53 +71,56 @@ const courses = [
   {
     title: "قرآنِ مجید کا تعارف",
     topics: [
-      "History of Revelation (Wahi)", "Compilation of the Quran", "Makki and Madani Surahs",
-      "Importance of the Quran in Daily Life", "Tawheed (Oneness of Allah)", "Attributes of Allah",
-      "Prophethood (Risalat)", "Finality of Prophet Muhammad", "Angels in Islam", "Divine Books",
-      "Akhirah (Life Hereafter)", "Day of Judgment", "Worship in Islam", "Salah (Prayer) in the Quran",
-      "Fasting in the Quran", "Zakat and Charity", "Hajj and Pilgrimage", "Moral Teachings of the Quran",
-      "Rights of Parents", "Rights of Neighbors and Society", "Women’s Rights in Islam",
-      "Human Rights in the Quran", "Economic Teachings of Islam", "Justice and Equality",
-      "Peace and Tolerance", "Stories of Prophets in the Quran", "Scientific Facts in the Quran",
-      "Quranic Supplications (Duas)", "Practical Quranic Guidance for Modern Life"
+      "تاریخِ وحی", "قرآنِ مجید کی تدوین", "مکی اور مدنی سورتیں",
+"روزمرہ زندگی میں قرآن کی اہمیت", "توحید (اللہ کی وحدانیت)", "اللہ تعالیٰ کی صفات",
+"رسالت", "حضرت محمد ﷺ کی ختمِ نبوت", "اسلام میں فرشتے", "آسمانی کتابیں",
+"آخرت", "یومِ قیامت", "اسلام میں عبادت", "قرآن میں نماز",
+"قرآن میں روزہ", "زکوٰۃ اور صدقہ", "حج اور زیارت", "قرآن کی اخلاقی تعلیمات",
+"والدین کے حقوق", "پڑوسیوں اور معاشرے کے حقوق", "اسلام میں خواتین کے حقوق",
+"قرآن میں انسانی حقوق", "اسلام کی معاشی تعلیمات", "انصاف اور مساوات",
+"امن اور رواداری", "قرآن میں انبیاء کے واقعات", "قرآن میں سائنسی حقائق",
+"قرآنی دعائیں", "جدید زندگی کے لیے قرآنی رہنمائی"
     ]
   },
   {
     title: "سیرت",
     topics: [
-      "Introduction to Seerah", "Arabia Before Islam", "Family Background of Prophet Muhammad ﷺ",
-      "Birth of the Prophet ﷺ", "Childhood and Upbringing", "Youth of the Prophet ﷺ",
-      "Trade and Honesty", "Marriage with Hazrat Khadijah (RA)", "Cave Hira and Worship",
-      "First Revelation", "Early Preaching of Islam", "Persecution in Makkah", "Migration to Abyssinia",
-      "Isra and Miraj", "Pledges of Aqabah", "Migration to Madinah", "Construction of Masjid-e-Nabawi",
-      "Brotherhood in Madinah", "Battle of Badr", "Battle of Uhud", "Battle of the Trench",
-      "Treaty of Hudaybiyyah", "Conquest of Makkah", "Farewell Sermon", "Character of the Prophet ﷺ",
-      "Justice of the Prophet ﷺ", "Kindness Towards Women", "Love for Children", "Passing of the Prophet ﷺ"
+      "سیرت کا تعارف", "اسلام سے پہلے کا عرب", "نبی کریم ﷺ کا خاندانی پس منظر",
+"ولادتِ رسول ﷺ", "بچپن اور پرورش", "نوجوانی کا دور",
+"تجارت اور دیانتداری", "حضرت خدیجہؓ سے شادی", "غارِ حرا اور عبادت",
+"پہلی وحی", "اسلام کی ابتدائی تبلیغ", "مکہ میں ظلم و ستم", "حبشہ کی ہجرت",
+"اسراء و معراج", "بیعتِ عقبہ", "مدینہ کی ہجرت", "مسجدِ نبوی ﷺ کی تعمیر",
+"مدینہ میں بھائی چارہ", "غزوۂ بدر", "غزوۂ اُحد", "غزوۂ خندق",
+"صلحِ حدیبیہ", "فتحِ مکہ", "خطبۂ حجۃ الوداع", "نبی کریم ﷺ کا کردار",
+"نبی کریم ﷺ کا انصاف", "عورتوں کے ساتھ حسنِ سلوک", "بچوں سے محبت", "وصالِ نبی ﷺ"
+
     ]
   },
   {
     title: "احکام",
     topics: [
-      "Introduction to Islamic Laws", "Rules of Purification", "Rules of Wudu", "Rules of Ghusl",
-      "Method of Tayammum", "Rules of Salah", "Congregational Prayer", "Rules of Friday Prayer",
-      "Rules of Fasting", "Rules of Zakat", "Charity and Sadaqah", "Rules of Hajj", "Rules of Umrah",
-      "Halal and Haram", "Islamic Manners of Eating and Drinking", "Rules of Islamic Dress",
-      "Rules of Marriage", "Rules of Divorce", "Laws of Inheritance", "Islamic Principles of Trade",
-      "Prohibition of Interest (Riba)", "Loans and Trusts", "Rights of Parents", "Rights of Neighbors",
-      "Rights of Husband and Wife", "Rights of Children", "Justice in Islam", "Islamic Social System",
-      "Introduction to Hudood and Punishments", "Islamic Rulings for Daily Life"
+     "اسلامی قوانین کا تعارف", "پاکیزگی کے احکام", "وضو کے احکام", "غسل کے احکام",
+"تیمم کا طریقہ", "نماز کے احکام", "نمازِ باجماعت", "نمازِ جمعہ کے احکام",
+"روزے کے احکام", "زکوٰۃ کے احکام", "خیرات اور صدقہ", "حج کے احکام", "عمرہ کے احکام",
+"حلال اور حرام", "کھانے پینے کے اسلامی آداب", "اسلامی لباس کے احکام",
+"نکاح کے احکام", "طلاق کے احکام", "وراثت کے قوانین", "اسلامی اصولِ تجارت",
+"سود (ربا) کی ممانعت", "قرض اور امانت", "والدین کے حقوق", "پڑوسیوں کے حقوق",
+"میاں بیوی کے حقوق", "بچوں کے حقوق", "اسلام میں انصاف", "اسلامی معاشرتی نظام",
+"حدود اور سزاؤں کا تعارف", "روزمرہ زندگی کے اسلامی احکام"
+
     ]
   },
   {
     title: "اخلاق",
     topics: [
-      "Introduction to Ethics", "Importance of Good Character", "Truthfulness", "Honesty and Trustworthiness",
-      "Patience and Tolerance", "Gratitude", "Humility", "Respect for Parents", "Respect for Teachers",
-      "Respect for Elders", "Kindness to Youngers", "Good Behavior", "Brotherhood and Unity", "Forgiveness",
-      "Keeping Promises", "Justice and Fairness", "Cleanliness and Purity", "Punctuality",
-      "Hard Work and Integrity", "Avoiding Jealousy", "Controlling Anger", "Avoiding Backbiting and Slander",
-      "Generosity and Charity", "Hospitality", "Helping Others", "Islamic Manners of Speech",
-      "Choosing Good Friends", "Character of Prophet Muhammad ﷺ", "Social Ethics", "Islamic Ethics in Daily Life"
+      "اخلاقیات کا تعارف", "اچھے اخلاق کی اہمیت", "سچائی", "دیانت داری اور امانت داری",
+"صبر اور برداشت", "شکر گزاری", "انکساری", "والدین کا احترام", "اساتذہ کا احترام",
+"بزرگوں کا احترام", "چھوٹوں سے شفقت", "اچھا برتاؤ", "بھائی چارہ اور اتحاد", "معاف کرنا",
+"وعدہ پورا کرنا", "انصاف اور عدل", "صفائی اور پاکیزگی", "وقت کی پابندی",
+"محنت اور دیانت", "حسد سے بچنا", "غصے پر قابو پانا", "غیبت اور بہتان سے بچنا",
+"سخاوت اور خیرات", "مہمان نوازی", "دوسروں کی مدد کرنا", "گفتگو کے اسلامی آداب",
+"اچھے دوستوں کا انتخاب", "نبی کریم ﷺ کا اخلاق", "سماجی اخلاقیات", "روزمرہ زندگی میں اسلامی اخلاقیات"
+
     ]
   }
 ];
