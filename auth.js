@@ -285,3 +285,5 @@ async function sendToSmartForm(payload) {
     console.warn("SmartForm submit failed", e);
   }
 }
+
+dont change anything else just make as this that the courses section showing all courses represent them in same card with a slider inside it . this code is from file named auth.js i thing editing this will enough if you need to edit indexes code then also say 
